@@ -19,7 +19,7 @@
 @implementation SYWindow
 
 - (instancetype)initWithContentRect:(NSRect)contentRect
-                          styleMask:(NSUInteger)aStyle
+                          styleMask:(NSWindowStyleMask)aStyle
                             backing:(NSBackingStoreType)bufferingType
                               defer:(BOOL)flag
 {

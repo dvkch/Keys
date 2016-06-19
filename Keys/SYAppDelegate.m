@@ -19,4 +19,8 @@
     self.window.level |= NSStatusWindowLevel;
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
+}
+
 @end
