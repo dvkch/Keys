@@ -45,7 +45,7 @@ NSString *keyIdentifierForCharCode(unichar charCode);
         [keys addObject:@(SYModifierKeyRightAlt)];
 
     // Fn
-    if (modifierFlags & NSFunctionKeyMask)
+    if (modifierFlags & NSEventModifierFlagFunction)
         [keys addObject:@(SYModifierKeyFn)];
 
     if (modifierFlags & (1L << 16))

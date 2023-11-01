@@ -33,7 +33,7 @@
         
         NSEvent *(^handler)(NSEvent *) = ^NSEvent *(NSEvent *theEvent) {
             
-            if (theEvent.window == self && (theEvent.type == NSKeyUp || theEvent.type == NSKeyDown))
+            if (theEvent.window == self && (theEvent.type == NSEventTypeKeyUp || theEvent.type == NSEventTypeKeyDown))
             {
                 [self processEvent:theEvent];
                 return nil;
@@ -42,7 +42,7 @@
             return theEvent;
         };
         
-        self.eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:(NSKeyUpMask|NSKeyDownMask)
+        self.eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:(NSEventMaskKeyUp|NSEventMaskKeyDown)
                                                                   handler:handler];
     }
     return self;
@@ -71,10 +71,10 @@
     NSString *text = [SYKeyTools stringFromEvent:event];
     
     switch (event.type) {
-        case NSKeyDown:
+        case NSEventTypeKeyDown:
             [self.pressedKeys addObject:text];
             break;
-        case NSKeyUp:
+        case NSEventTypeKeyUp:
             [self.pressedKeys removeObject:text];
             break;
         default:
