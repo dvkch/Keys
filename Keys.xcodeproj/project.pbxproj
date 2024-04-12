@@ -7,26 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9759A71B1D15C6DC0004A362 /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9759A71A1D15C6DC0004A362 /* SYAppDelegate.m */; };
-		9759A71E1D15C6DC0004A362 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9759A71D1D15C6DC0004A362 /* main.m */; };
 		9759A7201D15C6DC0004A362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9759A71F1D15C6DC0004A362 /* Assets.xcassets */; };
 		9759A7231D15C6DC0004A362 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9759A7211D15C6DC0004A362 /* MainMenu.xib */; };
-		9759A72C1D15C7590004A362 /* SYWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9759A72B1D15C7590004A362 /* SYWindow.m */; };
-		9791D3AC1D15E79F0067EDD1 /* SYKeyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9791D3AB1D15E79F0067EDD1 /* SYKeyTools.m */; };
+		97C200522BC9E5570007186B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C200512BC9E5570007186B /* AppDelegate.swift */; };
+		97C2006F2BC9E7440007186B /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C2006E2BC9E7440007186B /* Window.swift */; };
+		97C200712BC9EB9D0007186B /* NSEvent+SY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C200702BC9EB9D0007186B /* NSEvent+SY.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9759A7161D15C6DB0004A362 /* Keys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keys.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9759A7191D15C6DC0004A362 /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
-		9759A71A1D15C6DC0004A362 /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
-		9759A71D1D15C6DC0004A362 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9759A71F1D15C6DC0004A362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9759A7221D15C6DC0004A362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9759A7241D15C6DC0004A362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9759A72A1D15C7590004A362 /* SYWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWindow.h; sourceTree = "<group>"; };
-		9759A72B1D15C7590004A362 /* SYWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWindow.m; sourceTree = "<group>"; };
-		9791D3AA1D15E79F0067EDD1 /* SYKeyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYKeyTools.h; sourceTree = "<group>"; };
-		9791D3AB1D15E79F0067EDD1 /* SYKeyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYKeyTools.m; sourceTree = "<group>"; };
+		97C200512BC9E5570007186B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97C2006E2BC9E7440007186B /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		97C200702BC9EB9D0007186B /* NSEvent+SY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEvent+SY.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,26 +54,14 @@
 		9759A7181D15C6DB0004A362 /* Keys */ = {
 			isa = PBXGroup;
 			children = (
-				9759A7191D15C6DC0004A362 /* SYAppDelegate.h */,
-				9759A71A1D15C6DC0004A362 /* SYAppDelegate.m */,
-				9759A72A1D15C7590004A362 /* SYWindow.h */,
-				9759A72B1D15C7590004A362 /* SYWindow.m */,
-				9791D3AA1D15E79F0067EDD1 /* SYKeyTools.h */,
-				9791D3AB1D15E79F0067EDD1 /* SYKeyTools.m */,
+				97C200512BC9E5570007186B /* AppDelegate.swift */,
+				97C200702BC9EB9D0007186B /* NSEvent+SY.swift */,
+				97C2006E2BC9E7440007186B /* Window.swift */,
 				9759A71F1D15C6DC0004A362 /* Assets.xcassets */,
-				9759A7211D15C6DC0004A362 /* MainMenu.xib */,
 				9759A7241D15C6DC0004A362 /* Info.plist */,
-				9759A71C1D15C6DC0004A362 /* Supporting Files */,
+				9759A7211D15C6DC0004A362 /* MainMenu.xib */,
 			);
 			path = Keys;
-			sourceTree = "<group>";
-		};
-		9759A71C1D15C6DC0004A362 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9759A71D1D15C6DC0004A362 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,10 +103,9 @@
 			};
 			buildConfigurationList = 9759A7111D15C6DB0004A362 /* Build configuration list for PBXProject "Keys" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -154,10 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9759A72C1D15C7590004A362 /* SYWindow.m in Sources */,
-				9791D3AC1D15E79F0067EDD1 /* SYKeyTools.m in Sources */,
-				9759A71E1D15C6DC0004A362 /* main.m in Sources */,
-				9759A71B1D15C6DC0004A362 /* SYAppDelegate.m in Sources */,
+				97C200712BC9EB9D0007186B /* NSEvent+SY.swift in Sources */,
+				97C2006F2BC9E7440007186B /* Window.swift in Sources */,
+				97C200522BC9E5570007186B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
