@@ -6,7 +6,7 @@
 
 Determine which keys on your keyboard are pressed. 
 
-![Screenshot](https://raw.githubusercontent.com/dvkch/Keys/master/Screenshot.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/dvkch/Keys/main/Screenshot.png "Screenshot")
 
 ### Known limitations
 
