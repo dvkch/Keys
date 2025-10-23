@@ -4,7 +4,9 @@
 
 ### Summary
 
-Determine which keys on your keyboard are pressed. 
+Determine which keys on your keyboard are pressed.
+
+[Read about it @ syan.me](https://syan.me/en/products/keys)
 
 ![Screenshot](https://raw.githubusercontent.com/dvkch/Keys/main/Screenshot.png "Screenshot")
 
